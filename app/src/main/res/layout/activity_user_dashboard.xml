@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ACTIVITY.UserDashboard"
+    android:background="@drawable/galexy">
+
+
+    <!--Row 1-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/row0"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="Welcome to User Menu"
+            android:textSize="33dp"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/aldrich"
+            android:textColor="#FFFFFF"
+            android:id="@+id/headingUserDashboard"/>
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+
+
+
+        <!--Row 1-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/row1"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+<!--            row 1 card 1-->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:elevation="25dp"
+                app:cardCornerRadius="10dp"
+                android:layout_weight="1"
+                android:layout_margin="20dp"
+                android:foreground="?android:attr/selectableItemBackground">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/profile"
+                        android:layout_width="146dp"
+                        android:layout_height="101dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/profile111" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_below="@id/profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Profile"
+                        android:textColor="#000000"
+                        android:fontFamily="@font/aldrich"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        />
+
+                </RelativeLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+<!--            row 1 card 2-->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:elevation="25dp"
+                app:cardCornerRadius="10dp"
+                android:layout_weight="1"
+                android:layout_margin="20dp"
+                android:foreground="?android:attr/selectableItemBackground">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/products"
+                        android:layout_width="129dp"
+                        android:layout_height="108dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/ic_shop" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_below="@id/products"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Shop"
+                        android:textColor="#000000"
+                        android:fontFamily="@font/aldrich"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp" />
+
+                </RelativeLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+        <!--Row 2-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/row2"
+            android:layout_below="@+id/row1"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <!--            row 2 card 1-->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:elevation="25dp"
+                app:cardCornerRadius="10dp"
+                android:layout_weight="1"
+                android:layout_margin="20dp"
+                android:foreground="?android:attr/selectableItemBackground">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/cart"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_shopping_cart"/>
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_below="@id/cart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="My Cart"
+                        android:textColor="#000000"
+                        android:fontFamily="@font/aldrich"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        />
+
+                </RelativeLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!--            row 2 card 2-->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:elevation="25dp"
+                app:cardCornerRadius="10dp"
+                android:layout_weight="1"
+                android:layout_margin="20dp"
+                android:foreground="?android:attr/selectableItemBackground">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/orders"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_orders"/>
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_below="@id/orders"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="My Orders"
+                        android:textColor="#000000"
+                        android:fontFamily="@font/aldrich"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp" />
+
+                </RelativeLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+        <!--Row 3-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/row3"
+            android:layout_below="@+id/row2"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <!--            row 2 card 1-->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:elevation="25dp"
+                app:cardCornerRadius="10dp"
+                android:layout_weight="1"
+                android:layout_margin="20dp"
+                android:foreground="?android:attr/selectableItemBackground">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/news"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_news"/>
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_below="@id/news"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="News"
+                        android:textColor="#000000"
+                        android:fontFamily="@font/aldrich"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp" />
+
+                </RelativeLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!--    row 2 card 2-->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:elevation="25dp"
+                app:cardCornerRadius="10dp"
+                android:layout_weight="1"
+                android:layout_margin="20dp"
+                android:foreground="?android:attr/selectableItemBackground">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/logout"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_logout"/>
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_below="@id/logout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Logout"
+                        android:textColor="#000000"
+                        android:fontFamily="@font/aldrich"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp" />
+
+                </RelativeLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

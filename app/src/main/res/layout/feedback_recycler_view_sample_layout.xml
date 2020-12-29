@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="25dp"
+        app:cardCornerRadius="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginBottom="5dp">
+
+        <LinearLayout
+            android:id="@+id/firstrow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_marginRight="5dp"
+                android:id="@+id/txtusername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aldrich"
+                android:text="Bikram oli :"
+                android:textStyle="bold"
+                android:textColor="#047ED6" />
+
+
+
+            <TextView
+                android:id="@+id/txtuserfeedback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aldrich"
+                android:text= "This is good product"
+                android:layout_alignParentEnd="true"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/txtuserrating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aldrich"
+                android:text= "5"
+                android:textSize="18dp"
+                android:layout_marginLeft="15dp"
+                android:layout_alignParentEnd="true"
+                android:textColor="#9B9B9B"/>
+
+        </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>

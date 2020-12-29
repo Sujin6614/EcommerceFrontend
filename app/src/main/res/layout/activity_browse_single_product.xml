@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context=".ACTIVITY.BrowseSingleProduct">
+
+    <ImageView
+        android:id="@+id/singleViewProductImage"
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/carengine" />
+
+<!--    Details of product-->
+    <ScrollView
+        android:id="@+id/productDetailsScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/singleViewProductImage">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewProductDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:elevation="25dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="#EEEEEE">
+
+
+                <TextView
+                    android:id="@+id/singleViewProductPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/aldrich"
+                    android:text="Rs. 170000"
+                    android:textColor="#FD7439"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/singleViewProductName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/singleViewProductPrice"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/aldrich"
+                    android:text="Car"
+                    android:textColor="#000000"
+                    android:textSize="18dp" />
+
+                <!--Description-->
+
+                <LinearLayout
+                    android:id="@+id/layoutProductDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_below="@id/singleViewProductName"
+                    android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/descriptionLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Description: " />
+
+                <TextView
+                    android:id="@+id/singleViewProductDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/aldrich"
+                    android:text="this is a car"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+                </LinearLayout>
+
+                <!--End of description -->
+
+
+                <!--Brand-->
+
+                <LinearLayout
+                    android:id="@+id/layoutProductBrand"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_below="@id/layoutProductDescription"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:id="@+id/brandLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Brand: " />
+
+                    <TextView
+                        android:id="@+id/singleViewProductBrand"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/aldrich"
+                        android:text="Ferrari v3 "
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+                <!--End of brand -->
+
+
+                <!--Warrenty-->
+
+                <LinearLayout
+                    android:id="@+id/layoutProductWarrenty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_below="@id/layoutProductBrand"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:id="@+id/warrentyLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Warrenty: " />
+
+                    <TextView
+                        android:id="@+id/singleViewProductWarrenty"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/aldrich"
+                        android:text="5 years"
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+                <!--End of warrenty -->
+
+
+                <!--Added date-->
+
+                <LinearLayout
+                    android:id="@+id/layoutProductAddedDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_below="@id/layoutProductWarrenty"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:id="@+id/addedDateLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Added date : " />
+
+                    <TextView
+                        android:id="@+id/singleViewProductAddedDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/aldrich"
+                        android:text="2020/11/15"
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+                <!--End of added date -->
+
+                <!--Rating and feedback-->
+
+                <LinearLayout
+                    android:id="@+id/layoutRateAndFeedbac"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_below="@id/layoutProductAddedDate"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:id="@+id/toggleViewFeedbackDetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/aldrich"
+                        android:text="View and give rating and feedback"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+                <!--Rating -->
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutBottomButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+    <Button
+        android:id="@+id/btnAddToCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/imagebackground"
+        android:layout_alignParentBottom="true"
+        android:text="Add to cart"
+        android:layout_weight="1"
+        android:layout_margin="5dp"/>
+
+
+
+    </LinearLayout>
+<!--    End of details product-->
+
+
+
+
+<!--    Rating and feedback details-->
+    <ScrollView
+        android:id="@+id/feedbackAndRatingScollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/singleViewProductImage"
+        android:visibility="invisible">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewRatingAndFeedBackDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:elevation="25dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="#EEEEEE">
+
+                <TextView
+                    android:id="@+id/totalAverageRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:fontFamily="@font/aldrich" />
+
+                <ImageView
+                    android:id="@+id/imgToggleVeiewProductDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_view"
+                    android:layout_alignParentEnd="true"
+                    android:tooltipText="View Details"/>
+
+                <EditText
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/etRating"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/totalAverageRating"
+                    android:background="@drawable/edittext_background"
+                    android:inputType="number"
+                    android:digits="1,2,3,4,5"
+                    android:fontFamily="@font/aldrich"
+                    android:hint="Enter rating (1-5)"
+                    android:textSize="15dp"
+                    android:maxLength="1"
+                    android:importantForAutofill="no"
+                    android:drawableLeft="@drawable/ic_rating"
+                    android:drawablePadding="5dp"/>
+
+                <EditText
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/etFeedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/etRating"
+                    android:background="@drawable/edittext_background"
+                    android:fontFamily="@font/aldrich"
+                    android:hint="Enter your feedback"
+                    android:importantForAutofill="no"
+                    android:inputType="text|textMultiLine"
+                    android:textSize="15dp"
+                    android:drawableLeft="@drawable/ic_feedback"
+                    android:drawablePadding="5dp"/>
+
+                <Button
+                    android:id="@+id/btnSubmitRatingFeedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/addtowatchlistbuttonshape"
+                    android:text="Submit"
+                    android:layout_below="@id/etFeedback"/>
+
+
+                <TextView
+                    android:layout_marginTop="3dp"
+                    android:id="@+id/labelFeedback"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="Feedbacks"
+                    android:textColor="#000000"
+                    android:layout_below="@id/btnSubmitRatingFeedback"
+                    android:fontFamily="@font/aldrich" />
+
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_marginTop="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/feedbackAndratingRecyclerView"
+                    android:layout_below="@id/labelFeedback"/>
+
+            </RelativeLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+    </ScrollView>
+<!--    End of rating and feedback-->
+
+</RelativeLayout>

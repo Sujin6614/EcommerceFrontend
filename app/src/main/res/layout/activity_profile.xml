@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGreen"
+    tools:context=".ACTIVITY.Profile">
+
+    <ScrollView
+        android:id="@+id/updateProfilescrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/updateProfileheadingtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/alfa_slab_one"
+                android:text="My Profile"
+                android:textColor="#2B2B2B"
+                android:textSize="25dp" />
+
+
+            <LinearLayout
+                android:id="@+id/userImageLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/updateProfileheadingtext"
+                android:orientation="vertical"
+                android:layout_alignParentStart="true"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imgOpenCamera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:src="@drawable/ic_opencamera" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/aldrich"
+                    android:text="Open camera"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/userImageLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/updateProfileheadingtext"
+                android:orientation="vertical"
+                android:layout_alignParentEnd="true">
+
+                <ImageView
+                    android:id="@+id/imgOpenGallery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:src="@drawable/ic_opengallery" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/aldrich"
+                    android:text="Open Gallery"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+
+                android:id="@+id/imgUserProfileImage"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/userImageLayout2"
+                 android:background="@drawable/imagebackground"
+                android:src="@drawable/ic_image"/>
+
+
+            <EditText
+                android:id="@+id/etFfullname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgUserProfileImage"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/edittext_background"
+                android:drawableLeft="@drawable/ic_user"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/aldrich"
+                android:hint="Full name"
+                android:textSize="18dp" />
+
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etFfullname"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext_background"
+                android:drawableLeft="@drawable/ic_email"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/aldrich"
+                android:hint="Email"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/etMobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etEmail"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext_background"
+                android:drawableLeft="@drawable/ic_mobile"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/aldrich"
+                android:hint="Mobile number"
+                android:inputType="number"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/etAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etMobile"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext_background"
+                android:drawableLeft="@drawable/ic_address"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/aldrich"
+                android:hint="Address"
+                android:textSize="18dp" />
+
+
+            <Button
+                android:id="@+id/btnUpdateProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etAddress"
+                android:layout_marginBottom="10dp"
+                android:text="Update" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

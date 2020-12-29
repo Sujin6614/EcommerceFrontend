@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ACTIVITY.ConfirmOrder">
+
+
+    <ImageView
+        android:id="@+id/confirmOrderImage"
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/carengine" />
+
+    <!--    Details of product-->
+    <ScrollView
+        android:id="@+id/productDetailsScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/confirmOrderImage">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewConfirmOrderDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:elevation="25dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="#EEEEEE">
+
+
+                <TextView
+                    android:id="@+id/confirmOrderPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/aldrich"
+                    android:text="Rs. 170000"
+                    android:textColor="#FD7439"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/confirmOrderName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/confirmOrderPrice"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/aldrich"
+                    android:text="Car"
+                    android:textColor="#000000"
+                    android:textSize="18dp" />
+
+                <!--Billing address-->
+
+                <LinearLayout
+                    android:id="@+id/layoutBillingAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_below="@id/confirmOrderName"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#EEEEEE">
+
+                    <TextView
+                        android:id="@+id/bilingDetailsLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Billing address "
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                     />
+
+                    <TextView
+                        android:id="@+id/billingUsername"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/aldrich"
+                        android:text="sameer"
+                        android:drawableLeft="@drawable/ic_user"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:drawablePadding="5dp"/>
+
+                    <TextView
+                        android:id="@+id/billingEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/aldrich"
+                        android:text="sameer@gmail.com"
+                        android:drawableLeft="@drawable/ic_email"
+                        android:textColor="#000000"
+                        android:drawablePadding="5dp"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/billingMobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/aldrich"
+                        android:text="9862078511"
+                        android:drawableLeft="@drawable/ic_mobile"
+                        android:textColor="#000000"
+                        android:drawablePadding="5dp"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/billingAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/aldrich"
+                        android:text="Kathmandu, baneshowr"
+                        android:drawableLeft="@drawable/ic_address"
+                        android:textColor="#000000"
+                        android:drawablePadding="5dp"
+                        android:textSize="18dp" />
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+                <!--Payment method -->
+
+                <LinearLayout
+                    android:id="@+id/layourPaymentMethod"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_below="@id/layoutBillingAddress"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:id="@+id/paymentMethodLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PaymentMethod"
+                        android:textSize="15dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/paymentMethod"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/aldrich"
+                        android:text="Currently we accept cash on delivery only"
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+                <!--End of payment method  -->
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+    </ScrollView>
+
+
+
+        <Button
+            android:id="@+id/btnConfirmOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/imagebackground"
+            android:layout_alignParentBottom="true"
+            android:text="Confirm order"
+            android:layout_weight="1"
+            android:layout_margin="5dp"/>
+
+
+
+    <!--    End of details product-->
+
+
+</RelativeLayout>

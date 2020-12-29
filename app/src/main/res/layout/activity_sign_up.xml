@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back2"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ACTIVITY.SignUp">
+
+    <ScrollView
+        android:id="@+id/signupscrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp">
+
+            <ImageView
+                android:id="@+id/signupapplogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/logo1" />
+
+            <TextView
+                android:id="@+id/signupheadingtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/signupapplogo"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/alfa_slab_one"
+                android:text="Sign up"
+                android:layout_marginBottom="10dp"
+                android:textColor="#416E01"
+                android:textSize="35dp" />
+
+
+            <EditText
+                android:id="@+id/etFfullname"
+                android:layout_width="wrap_content"
+                android:layout_height="39dp"
+                android:layout_below="@id/signupheadingtext"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/colorGreen"
+                android:drawableLeft="@drawable/ic_user"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/aldrich"
+                android:hint="Full name"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="39dp"
+                android:layout_below="@id/etFfullname"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/colorGreen"
+                android:drawableLeft="@drawable/ic_email"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/aldrich"
+                android:hint="Email"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/etMobile"
+                android:layout_width="wrap_content"
+                android:layout_height="39dp"
+                android:layout_below="@id/etEmail"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/colorGreen"
+                android:drawableLeft="@drawable/ic_mobile"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/aldrich"
+                android:hint="Mobile number"
+                android:inputType="number"
+                android:textSize="18dp" />
+
+
+            <EditText
+                android:id="@+id/etAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="39dp"
+                android:layout_below="@id/etMobile"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="0dp"
+
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/colorGreen"
+                android:drawableLeft="@drawable/ic_address"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/aldrich"
+                android:hint="Address"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="41dp"
+                android:layout_below="@id/etAddress"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="0dp"
+
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/colorGreen"
+                android:drawableLeft="@drawable/ic_password"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/aldrich"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/etCPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:layout_below="@id/etPassword"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="0dp"
+
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/colorGreen"
+                android:drawableLeft="@drawable/ic_password"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/aldrich"
+                android:hint="Confirm password"
+                android:inputType="textPassword"
+                android:textSize="18dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etCPassword"
+                android:id="@+id/btnSignup"
+                android:text="Sign up 📑"
+                android:textSize="20dp"
+                android:layout_marginBottom="10dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gotoLogin"
+                android:textColor="#047ED6"
+                android:text="Already a member ? Click here to login"
+                android:layout_below="@id/btnSignup"
+                android:fontFamily="@font/aldrich"
+                android:textSize="20dp"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"/>
+
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
